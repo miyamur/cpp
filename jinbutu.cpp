@@ -7,7 +7,7 @@ class jimbutu
 {
   int power;
 public:
-  jimbutu():power(5){}
+  jimbutu():power(10){}
   int get_power() const {return power;}
   void decr_power(){
     power--;
