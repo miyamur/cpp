@@ -4,6 +4,10 @@ using namespace std;
 class Nanika{
   int datum;
 public:
+
+  Nanika():datum(0){
+    cout<<"インスタンス"<<datum<<"が生成されました"<<endl;
+  }
     Nanika(int x):datum(x){
     cout<<"インスタンス"<<datum<<"が生成されました"<<endl;
   }
@@ -17,8 +21,9 @@ public:
 
 int main()
 {
- Nanika One(1),Two(2);
- 
- One.func();
- Two.func();
+ Nanika *p;
+ cout<<"nanikaのオブジェクトを生成"<<endl;
+ p=new Nanika(1);
+ p->func(); 
+ delete p;
  }
