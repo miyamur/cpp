@@ -102,7 +102,14 @@ for (int i=0;i<5;i++)
   {
     x[i]->Jikosyoukai();
   }
+  int sum=0;
+  for(int i=0;i<5;i++)
+  {
+    sum+=x[i]->get_power();
+  }
+  cout<<sum<<endl;
   for(int i=0;i<5;i++){
   delete x[i];
 }
+
 }
