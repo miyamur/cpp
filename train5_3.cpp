@@ -6,30 +6,21 @@
 using namespace std;
 
 int main() {
-    set<string> names;  // set のデータ構造を用意する。
-    //  あたいを代入
-    names.insert("Tom");
-    names.insert("Mike");
-    names.insert("Mike");   //  同じ名前をダブって代入させる
-    names.insert("Bob");
-    //  登録されている全データを表示
-    set<string>::iterator it; //  イテレータを用意
-    for(it = names.begin() ; it != names.end(); it++){
-        cout << *it << endl;
-    }
-    //  Bob,Steveがデータ内に存在するか調べる
-    string n[] = {"Bob","Steve"};
+    set<int> names;
     int i;
-    for(i = 0; i < 2;i++){
-      cout<<rand()%10<<endl;
-        it = names.find(n[i]);
-        if(it == names.end()){
-            //  データが、set内に存在しなしい
-            cout << n[i] << " is not in a set." << endl;
-        }else{
-            //  データがset内に存在する。
-            cout << n[i] << " is in a set." << endl;
-        }
+    int x;
+    cout<<"乱数";
+    for(i = 0; i < 10;i++){
+      x=rand()%10;
+      cout<<x<<" ";
+      names.insert(x);
     }
+    cout<<endl;
+    cout<<"出現した数";
+    set<int>::iterator it;
+    for(it = names.begin() ; it != names.end(); it++){
+      cout << *it <<" ";
+    }
+    cout<<endl;
     return 0;
 }
