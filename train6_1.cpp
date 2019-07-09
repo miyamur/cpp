@@ -1,6 +1,7 @@
 #include <iostream>
 #include "fighteraircraft.h"
 #include "passengerplane.h"
+#include "plane.h"
 
 using namespace std;
 

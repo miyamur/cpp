@@ -1,4 +1,5 @@
 #include "passengerplane.h"
+#include "plane.h"
 
 //  コンストラクタ
 PassengerPlane::PassengerPlane()
@@ -6,10 +7,10 @@ PassengerPlane::PassengerPlane()
     m_type = "旅客機";
 }
 //  タイプの取得
-string PassengerPlane::getType()
+/*string PassengerPlane::getType()
 {
     return m_type;
-}
+}*/
 //  飛行する
 void PassengerPlane::fly()
 {

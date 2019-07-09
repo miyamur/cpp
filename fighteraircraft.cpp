@@ -1,4 +1,5 @@
 #include "fighteraircraft.h"
+#include "plane.h"
 
 //  コンストラクタ
 FighterAircraft::FighterAircraft()
@@ -6,10 +7,10 @@ FighterAircraft::FighterAircraft()
     m_type = "戦闘機";
 }
 //  タイプの取得
-string FighterAircraft::getType()
+/*string FighterAircraft::getType()
 {
     return m_type;
-}
+}*/
 //  飛行する
 void FighterAircraft::fly()
 {

@@ -3,18 +3,19 @@
 
 #include <iostream>
 #include <string>
+#include "plane.h"
 
 using namespace std;
 
 //  旅客機クラス
-class PassengerPlane{
-private:
-    string m_type;
+class PassengerPlane: public AirPlane{
+//private:
+  //  string m_type;
 public:
     //  コンストラクタ
     PassengerPlane();
     //  タイプの取得
-    string getType();
+//    string getType();
     //  飛行する
     void fly();
     //  乗客を運ぶ
